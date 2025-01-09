@@ -1,0 +1,21 @@
+[
+    {
+        "uuid": "00000000",
+        "name": "Test",
+        "age": "99",
+        "team": "Test School",
+        "position": "QB",
+        "sport": "Football",
+        "stats": {
+            "rushingYards": 10,
+            "passingYards": 5,
+            "receivingYards": 8,
+            "touchDowns": 2,
+            "fumbles": 0,
+            "interceptions": 0,
+            "passAttempts": 0,
+            "completions": 0,
+            "receptions": 0
+    }
+    }
+]
