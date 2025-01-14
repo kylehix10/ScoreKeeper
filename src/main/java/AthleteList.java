@@ -19,6 +19,16 @@ public class AthleteList {
         return null;
     }
 
+    public Athlete displayByTeam(String team) {
+        for (Athlete athlete : athletes) {
+            if (athlete.getTeam().equals(team)) {
+                System.out.println(athlete.toString());
+                return athlete;
+            }
+        }
+        return null;
+    }
+
     public void removeAthlete(Athlete athlete) {
         athletes.remove(athlete);
     }

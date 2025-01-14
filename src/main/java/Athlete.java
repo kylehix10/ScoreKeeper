@@ -9,17 +9,19 @@ public class Athlete {
     private String team;
     private String position;
     private String sport;
+    private int number;
 
     private Stat stats;      
 
     
-    public Athlete(String name, int age, String team, String position, String sport) {
+    public Athlete(String name, int age, String team, String position, String sport, int number) {
                 this.id = createUUID();
                 this.name = name;
                 this.age = age;
                 this.team = team;
                 this.position = position;
                 this.sport = sport;
+                this.number = number;
                 this.stats = new Stat(); 
             }
         
@@ -53,6 +55,14 @@ public class Athlete {
 
     public Stat getStats() {
         return stats;
+    }
+
+    public int getNumber() {
+        return number;
+    }
+    
+    public void setNumber(int number) {
+        this.number = number;
     }
 
     

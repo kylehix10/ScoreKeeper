@@ -51,6 +51,10 @@ public class Facade {
     public void displayStat(String statType) {
         stat.displayStat(statType);
     } 
+
+    public void displayByTeam(String team) {
+        athleteList.displayByTeam(team);
+    }
     
 
 

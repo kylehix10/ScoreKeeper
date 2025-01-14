@@ -14,9 +14,9 @@ public class App {
 
     public static void scenario1(){
         
-        Athlete athlete1 = new Athlete( "Tom Brady", 43, "Tampa Bay Buccaneers", "Quarterback", "Football");
-        Athlete athlete2 = new Athlete( "Saquon Barkley", 27, "Philadelphia", "Running Back", "Football");
-        Athlete athlete3 = new Athlete( "DK Metcalf", 27, "Seattle", "Wide Receiver", "Football");
+        Athlete athlete1 = new Athlete( "Tom Brady", 43, "Tampa Bay Buccaneers", "Quarterback", "Football", 12);
+        Athlete athlete2 = new Athlete( "Saquon Barkley", 27, "Philadelphia", "Running Back", "Football", 26);
+        Athlete athlete3 = new Athlete( "DK Metcalf", 27, "Seattle", "Wide Receiver", "Football", 14);
         facade.addAthlete(athlete1);
         facade.addAthlete(athlete2);
         facade.addAthlete(athlete3);
@@ -28,9 +28,11 @@ public class App {
         //test.displayStats();
         DataWriter dataWriter = new DataWriter();
         DataWriter.saveAthlete(facade.getAthleteList().getAthletes());
-        facade.getAthleteList().removeAthlete(athlete3);
+        //facade.getAthleteList().removeAthlete(athlete3);
         DataWriter.saveAthlete(facade.getAthleteList().getAthletes());
         test.displayStat("touchDowns");
+
+        facade.displayByTeam("Seattle");
 
         
     }   
